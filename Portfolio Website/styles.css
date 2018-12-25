@@ -1,0 +1,768 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+@import url('https://fonts.googleapis.com/css?family=Lekton');
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:300');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=PT Mono');
+@import url('https://fonts.googleapis.com/css?family=Bilbo');
+
+h1{
+	font-family: 'Julius Sans One', sans-serif;
+	color: black;
+}
+body{
+	background-color:#AE9F80;
+	background-image: url(images/backg.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	
+}
+*{
+	box-sizing: border-box;
+}
+
+/* Nav Bar*/
+.c1{
+	padding: 0;
+}
+.navbar{
+	position: fixed;
+	top:0px;
+	right: 0;
+}
+.navicon{
+	background-color: black;
+	border:1px solid black;
+	margin-right: 8px;
+	margin-bottom: 0;
+}
+.navicon-bar{
+	background-color: aliceblue;
+	
+}
+.navbar-rect{
+	background-color: transparent;
+	z-index: 20;
+
+}
+.dropdown-link{
+	text-align: right;
+	font-size: 2rem;
+	color: black;
+	font-family: 'Julius Sans One', sans-serif;
+	background-color: white;
+	font-weight: bolder;
+	border: 1px solid black;
+	border-bottom: 0;
+	text-shadow: 0px 0px 0px black;
+	opacity: 0.9;
+}
+.dlc{
+	border-bottom: 1px solid black;
+	
+}
+.dropdown-link:hover{
+	color: #D30207 !important;
+	font-weight:bolder;
+	text-shadow: 0px 0px 0px #D30207 ;
+	background-color: #152324 !important;
+	opacity: 1;
+	
+}
+.navbar-collapse{
+	border-top: 0;
+}
+@media only screen and (min-width:768px){
+	body{
+		
+	}
+	.navbar{
+		left:0;
+	}
+	.navcontainer{
+		padding: 0;
+		width: 74rem;
+	}
+	.navbar-collapse{
+		padding: 0;
+	}
+	.dropdown-link{
+	border: 1px solid black;
+	border-right: 0;
+	text-shadow: 0px 0px 0px black;
+		font-size: 2rem;
+}
+.dlc{
+	border-right: 1px solid black;
+	
+}
+}
+/* Profile AKA Section 1*/
+.s1{
+	z-index: -1;
+}
+.profile-pic-col{
+	padding: 0;
+}
+.profile-pic{
+	width: 100%;
+	filter:grayscale(100%);
+	height: 100vh;
+}
+.profile-pic:hover{
+	filter: none;
+}
+.profile-pic-heading{
+	padding-bottom: .2rem;
+	margin:1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	color:whitesmoke;
+	font-size:5rem;
+}
+.profile-pic-title{
+	font-size: 2.5rem;
+	background-color: whitesmoke;
+	width: 30rem;
+	margin: auto auto;
+	padding: 1rem;
+	word-spacing: .5rem;
+	letter-spacing: .2rem;
+	margin-bottom: 1rem;
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-weight: bold;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name{
+	color:#D30207;
+	background-color: #152324;
+	padding-left: 0.5rem;
+	padding-right: 0rem;
+	padding-bottom: 0;
+	 box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.9;
+}
+.pic-heading-combo{
+	position: absolute;
+	bottom:0%;
+	left: 0;
+	right: 0;
+	
+}
+@media only screen and (min-width:768px){
+.profile-pic-title{
+	width: 50rem;
+	font-size: 5rem;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+	.profile-pic{
+		height:100vh;
+	}
+	.profile-pic-heading{
+		font-size: 11rem;
+	}
+}
+@media only screen and (min-width:1025px) {
+	.s1{
+		height: 100vh;
+	}
+	.profile-pic{
+		width:auto;
+		height: 93.7vh;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+		margin-top:5.5rem;
+		margin-bottom: 0rem;
+	}
+	.profile-pic-title{
+	width: 50rem;
+	font-size: 4.5rem;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-bottom: 1rem;
+}
+	.profile-pic-heading{
+		margin-bottom: 3rem;
+		font-size: 9.2rem;
+	}
+	.pic-heading-combo{
+	position: absolute;
+	bottom:2.5%;
+	left: 0;
+	right: 0;
+	
+}
+	
+}
+
+/* Message AKA Section 2*/
+
+.s2{
+	background-color: beige;
+	z-index: -1;
+}
+.head2{
+	font-size:7rem;
+	font-family: 'Bilbo', sans-serif;
+	letter-spacing: 0.2rem;
+	margin-top: 0.5rem;
+	color: black;
+}
+.par{
+	color: black;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	font-size:2rem;
+	line-height: 3.5rem;
+	font-family: 'Lekton', sans-serif;
+	
+}
+.parimp{
+	margin-bottom: 1.5rem;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	font-size: 1.8rem;
+	line-height: 3.2rem;
+	font-family: 'Lekton', sans-serif;
+}
+@media only screen and (min-width:768px){
+	h1{
+	font-size: 7rem;	
+	}
+	.par{
+		padding-left:5rem;
+		padding-right: 5rem;
+	font-size: 3rem;	
+		line-height: 5rem;
+	}
+	.head2{
+	font-size: 13vw;
+}
+}
+@media only screen and (min-width:1025px){
+	.s2{
+		margin-bottom: 0.5%;
+		margin-top: 0.5%;
+		width: 68%;
+		background-color:lightgrey;
+	}
+	.head2{
+	font-size: 10rem;
+}
+	.par{
+		padding-left: 0;
+		padding-right: 0;
+	margin-top: 1rem;
+	margin-left: 1%;
+	margin-right: 1%;
+		margin-bottom: 1%;
+		line-height: 5.5rem;
+	
+}
+	.par:first-of-type{
+		margin-top: 3rem;
+	}
+	.par strong{
+		font-size: 3.5rem;
+	}
+}
+/* Skills AKA Section 3*/
+h2{
+	font-family: 'Quantico', sans-serif;
+	font-size: 4rem;
+}
+.del2{
+	display: none;
+}
+.head3{
+	font-size:3.7rem;
+	color:black;
+	text-decoration-line: underline;
+}
+.sklist{
+	font-family: 'PT Mono', monospace;
+	list-style:square;
+	font-size: 2rem;
+}
+
+.par31{
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #07557B;
+}
+.par32{
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color:#6F371F;
+}
+.par33{
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color:#30144A;
+}
+.head3str{
+		padding-left: 0.5rem;
+	padding-right: 0.5rem;
+		
+
+}
+.head23{
+	margin-top: 0rem;
+	font-size: 4.5rem;
+
+}
+.s3{
+	z-index: -1;
+	font-size: 1.7rem;
+	padding: 0;
+	background-color:#b79d7c;
+}
+.progressbar1{
+	background-color: #359bba;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 1.5rem;
+	
+}
+.progressbar2{
+	background-color: #c96236;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 1.5rem;
+}
+.progressbar3{
+	background-color:#8939d3;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 1.5rem;
+}
+.sklist li{
+	font-size: 1.7rem;
+}
+@media only screen and (min-width:768px){
+	.head3{
+		font-size: 8rem;
+	}
+	.head23{
+		font-size: 7rem;
+	}
+	.s3 p{
+		font-size: 3.2rem;
+	}
+	.sklist li{
+		font-size: 2.5rem;
+	}
+	.colhardw{
+	}
+	p{
+		font-size:  2rem;
+	}
+	h2{
+	font-size: 6rem;	
+	}
+	.progress{
+		height: 3.5rem;
+	}
+	.progress-bar{
+		font-size: 3rem;
+		line-height: 35px;
+	}
+	
+	
+}
+@media only screen and (min-width: 992px){
+	.del1{
+		display: none;
+	}
+	.del2{
+		display: block;
+	}
+}
+@media only screen and (min-width:1025px){
+	.head3{
+	font-size: 7rem;
+		margin-bottom: 1.5rem;
+}
+	.s3{
+		width: 85%;
+	}
+	.sklist li{
+		font-size: 2rem;
+	}
+	.sklist{
+		margin-bottom: 2.5rem;
+	}
+	.sklist:last-of-type{
+		margin-bottom: 4rem;
+	}
+	.progress{
+		height: 2.5rem;
+	}
+	.progress-bar{
+		font-size:2rem;
+		line-height: 27px;
+	}
+	.s3 .par31{
+		font-size: 3rem;
+	}
+	.s3 .par32{
+		font-size: 3rem;
+	}
+	.s3 .par33{
+		font-size: 3rem;
+	}
+	.head23:last-of-type{
+		margin-top: 2rem;
+	}
+}
+/* Education AKA Section 4*/
+.s4{
+	background-color:#70ccad;
+	
+}
+.head4{
+	font-weight: bold;
+	font-size:4.3rem;
+	margin-top: 1rem;
+	text-decoration-line: underline;
+	color: black;
+}
+.paragraph-box{
+	border:1px solid black;
+	background-color: white;
+	margin-bottom: 1rem;
+}
+.paragraph-year{
+	border:1px solid black;
+	width: auto;
+	margin: auto 10%;
+	margin-top: 2rem;
+	padding: 0.5rem;
+	background-color: darkgrey;
+}
+.i12{
+	vertical-align: top;
+}
+.p121{
+	margin:2rem auto;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: bold;
+}
+.p122{
+	margin:2rem auto;
+	margin-top: 1rem;
+	font-size: 2rem;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: bold;
+}
+.p3{
+	padding: 2rem;
+	padding-bottom: .5rem;
+	padding-top: 0rem;
+	text-align: justify;
+	font-size: 2.1rem;
+	margin-bottom: 0;
+	font-family: 'Yantramanav', sans-serif;
+}
+.q1{
+	text-align: center;
+	margin-top:0rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	font-family: 'Handlee', cursive;
+}
+@media only screen and (min-width:768px){
+	.paragraph-year{
+	border:1px solid black;
+	width: 50rem;
+	margin: auto auto;
+	margin-top: 2rem;
+		font-size: 8rem;
+}
+		.head4{
+		font-size: 8rem;
+	}
+	.p121{
+font-size: 3.5rem;
+}
+.p122{
+	font-size: 3.5rem;
+}
+	.i12{
+	vertical-align: top;
+}
+	.material-icons{
+		font-size: 4rem !important;
+	}	
+	.p3{
+		font-size: 3.3rem;
+	}
+	.q1{
+		margin-top: 2rem;
+		font-size: 4.5rem;
+	}
+}
+@media only screen and (min-width:1025px){
+	.head4{
+	font-size: 7rem;
+}
+	.s4{
+		width: 70%;
+		margin-top: .5%;
+		margin-bottom: .5%;
+	}
+	.i12{
+	vertical-align:top;
+}
+	.p3{
+		font-size: 2.7rem;
+		line-height: 5rem;
+	}
+	.p121{
+		font-size: 3rem;
+	}
+	.p122{
+		font-size: 3rem;
+	}
+	.q1{
+		margin-top: 3rem;
+		font-size: 3.5rem;
+	}
+}
+/* Projects AKA Section 5*/
+
+.s5{
+	background-color:#993537;
+	padding: 0;
+	 box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+.head5{
+	margin:1rem;
+	padding: 0rem;
+	font-size:4.3rem;
+	font-weight: bold;
+	text-decoration: underline;
+	color: black;
+}
+.car-div{
+	bottom: 13%;
+}
+.car-head{
+	font-size: 3rem;
+	margin-bottom: 3.0rem;
+}
+.car-link{
+font-size: 2.5rem;
+	text-decoration: underline;
+	color:white;
+	font-family: 'Handlee', cursive;
+}
+.car-link:hover{
+	color:grey;
+	
+}
+.car-link:visited{
+	color:grey;
+}
+.carousel-indicators .active{
+	background-color: #99292b;
+	border-color: #99292b;
+	height: 1.8rem;
+	width: 1.8rem;
+}
+@media only screen and (min-width:768px){
+.head5{
+		font-size: 8rem;
+	}
+	.car-head{
+	font-size: 5.5rem;
+	
+}
+.car-link{
+font-size: 4.5rem;
+	
+}
+}
+@media only screen and (min-width:1025px){
+	.head5{
+	font-size: 7rem;
+}
+	.s5{
+		width: 85%;
+	}
+}
+
+/* Hobbies AKA Section 6*/
+.s6{
+}
+.head6{
+	font-size:4.3rem;
+	font-weight: bold;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	text-decoration-line: underline;
+		color:cadetblue;
+}
+.par6{
+	font-size: 2.3rem;
+	font-family: 'Handlee', sans-serif;
+	color: whitesmoke;
+}
+.par6 a{
+	text-decoration: underline;
+	color:cadetblue;
+}
+@media only screen and (min-width:768px){
+.head6{
+		font-size: 8rem;
+	}
+	.par6{
+		font-size:4rem;
+	}
+	
+}
+@media only screen and (min-width:1025px){
+	.head6{
+	font-size: 6rem;
+}
+}
+
+/* Contacts AKA Section 7*/
+.s7{
+	background-color:black;
+}
+.head7{
+	font-size:4.3rem;
+	margin-bottom: 0rem;
+	color: white;
+	margin-top: 1rem;
+	
+	letter-spacing: 0.5rem;
+	margin-left: 1.5rem;
+}
+.div7{
+	text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+.fa {
+  padding: 1rem;
+	font-size: 3.5rem !important;
+	width: 5.5rem;
+	height: auto;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 15%;
+	
+}
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-instagram:hover {
+	color: white;
+	text-decoration: none; 
+	background-color: #125688 ;
+	
+}
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+.fa-linkedin:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #007bb5;
+}
+.fa-facebook {
+  color: white;
+ background: black;
+}
+.fa-facebook:hover {
+	color: white;
+	text-decoration: none;
+	background: #3B5998;
+}
+.par72{
+	font-size: 1.8rem;
+	margin-top: 0.2rem;
+	color: white;
+	margin-bottom: 0;
+}
+.par72 a{ 
+	color: white;
+	text-decoration: underline;
+	
+}
+.par722{
+	
+	margin-top: 1rem;
+	color: white;
+	margin-bottom: 0;
+	line-height: 0rem;
+	font-size: 1.5rem;
+}
+.par722 a{
+	text-decoration: underline;
+	color: white;
+	
+}
+.ad7{
+	margin-bottom: 1.5rem;
+}
+.icons{
+	margin-top: 0.5rem;
+}
+@media only screen and (min-width:768px){
+.head7{
+		font-size: 7rem;
+	}
+	.par72{
+		font-size: 3rem;
+	}
+	.fa {
+  padding: 1rem;
+	font-size: 4.5rem !important;
+	width: 7.5rem;
+	height: auto;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 15%;
+	
+}
+	.par722{
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (min-width:1025px){
+	.head7{
+	font-size: 5.5rem;
+}
+		.par72{
+		font-size: 2.5rem;
+	}
+}
+
+
+
+
+
+
+
+
+
